@@ -1,6 +1,7 @@
 /**
  * Class used to check that a password has the right amount of character length,
- * special characters, and capitalization
+ * special characters, and capitalization. When an invalid password is given, the
+ * prompt for a valid password will be asked for again.
  * 
  * @author Niko Schwab
  * @date February 19, 2026
@@ -42,7 +43,7 @@ private:
             if (specials.find(c) != std::string::npos)
                 counter++;
 
-            if (counter = 2)
+            if (counter >= 2)
                 return true;
         }
         return false;
@@ -63,13 +64,17 @@ int main() {
     std::string password;
 
     std::cout << "atleast 2 special, one uppercase, and 9 total characters\n";
-    std::cout << "Enter password: ";
-    std::cin >> password;
 
-    if (checker.EvaluatePassword(password)) {
-        std::cout << "valid password" << std::endl;
-    } else {
-        std::cout << "invalid password" << std::endl;
+    while (true) {
+        std::cout << "Enter password: ";
+        std::cin >> password;
+
+        if (checker.EvaluatePassword(password)) {
+            std::cout << "valid password" << std::endl;
+            break;
+        } else {
+            std::cout << "invalid password, try again\n";
+        }
     }
 
     return 0;
