@@ -62,7 +62,7 @@ int main() {
     PassWordChecker checker;
     std::string password;
 
-    std::cout << "atleast 2 special, one uppercase, and 9 total characters";
+    std::cout << "atleast 2 special, one uppercase, and 9 total characters\n";
     std::cout << "Enter password: ";
     std::cin >> password;
 
