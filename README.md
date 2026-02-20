@@ -6,12 +6,19 @@
 **Lastly**, the program checks for atleast one uppercase character somewhere in the password. <br>
 
 **How to compile**, g++ passwordChecker.cpp -o passwordChecker <br>
-                        ./passwordChecker
+    ./passwordChecker
 
 **Notes:**<br>
 * When an invalid password is given, the prompt for a valid password will be asked for again.<br>
-**Limitations / Warnings**<br>
+
+**Limitations / Warnings:**<br>
 * Educational use only. This is a basic rule-based checker and should not be used to secure sensitive information.<br>
 * Not a security guarantee. Passing these rules does not mean a password is strong or safe.<br>
 * No storage or hashing. The program does not store passwords or apply cryptographic hashing.<br>
 * Rule set is minimal. It does not check for common passwords, dictionary words, repeated patterns, or other weaknesses.<br>
+
+**Ethical Considerations & Responsible Use:**<br>
+* This tool could give users a false sense of security because it only checks a few surface-level rules.<br>
+* A malicious user could modify it to log passwords, so it should never be used for real authentication or in any system that handles sensitive data.<br>
+* If used in a classroom or demo, clearly explain that real password validation should include hashing, rate limiting, and checks against known weak passwords.<br>
+* Do not use this program to collect or store passwords from other people.<br>
