@@ -5,11 +5,13 @@
 **Second**, runs through a method that counts the amount of special characters, ensuring there are atleast two somewhere in the password. <br>
 **Lastly**, the program checks for atleast one uppercase character somewhere in the password. <br>
 
-**How to compile**, g++ passwordChecker.cpp -o passwordChecker <br>
-    ./passwordChecker
-
-**Notes:**<br>
+***Notes:***<br>
 * When an invalid password is given, the prompt for a valid password will be asked for again.<br>
+**Dependencies:**<br>
+* A C++ compiler that supports C++20 (e.g., `g++`)<br>
+**How to compile:**<br>
+* g++ passwordChecker.cpp -o passwordChecker <br>
+*     ./passwordChecker<br>
 
 **Limitations / Warnings:**<br>
 * Educational use only. This is a basic rule-based checker and should not be used to secure sensitive information.<br>
