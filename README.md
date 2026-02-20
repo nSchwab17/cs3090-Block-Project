@@ -11,7 +11,7 @@
 * A C++ compiler that supports C++20 (e.g., `g++`)<br>
 **How to compile:**<br>
 * g++ passwordChecker.cpp -o passwordChecker <br>
-*     ./passwordChecker<br>
+    ./passwordChecker
 
 **Limitations / Warnings:**<br>
 * Educational use only. This is a basic rule-based checker and should not be used to secure sensitive information.<br>
